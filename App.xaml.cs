@@ -8,7 +8,8 @@ namespace PM022024RestApi
             InitializeComponent();
 
             //MainPage = new AppShell();
-            MainPage = new NavigationPage(new Views.PageListEmpleados());
+            //MainPage = new NavigationPage(new Views.PageListEmpleados());
+            MainPage = new NavigationPage(new Views.PageCreate());
         }
     }
 }

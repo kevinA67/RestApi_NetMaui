@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = PM022024RestApi.Resources.
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/kevin/source/repos/PM022024RestApi/PM022024RestApi/Views/PageCreate.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PM022024RestApi.Views.PageCreate.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PageCreate.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PageCreate.xaml
+
 [C:/Users/kevin/source/repos/PM022024RestApi/PM022024RestApi/Views/PageListEmpleados.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = PM022024RestApi.Views.PageListEmpleados.xaml

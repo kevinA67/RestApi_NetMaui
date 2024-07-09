@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PM022024RestApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9d35136bbfbc95f2f242ea0291e591de7602a703")]
 [assembly: System.Reflection.AssemblyProductAttribute("PM022024RestApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PM022024RestApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

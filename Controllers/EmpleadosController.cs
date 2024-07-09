@@ -13,23 +13,36 @@ namespace PM022024RestApi.Controllers
         //CREATE
         public async static Task<int> CreateEmpleados(Models.Empleados Empleados)
         {
-            String jsonObject = JsonConvert.SerializeObject(Empleados);
-            System.Net.Http.StringContent contenido= new StringContent(jsonObject, Encoding.UTF8,"application/json");
-
-            using (HttpClient client = new HttpClient())
+            try
             {
-                HttpResponseMessage response = null;
-                response = await client.PostAsync(Config.Config.EndPointCreate, contenido);
+                String jsonObject = JsonConvert.SerializeObject(Empleados);
+                System.Net.Http.StringContent contenido = new StringContent(jsonObject, Encoding.UTF8, "application/json");
 
-                if (response != null)
+                using (HttpClient client = new HttpClient())
                 {
-                    if (response.IsSuccessStatusCode)
+                    HttpResponseMessage response = null;
+                    response = await client.PostAsync(Config.Config.EndPointCreate, contenido);
+
+                    if (response != null)
                     {
-                        var result = response.Content.ReadAsStringAsync().Result;
+                        if (response.IsSuccessStatusCode)
+                        {
+                            var result = response.Content.ReadAsStringAsync().Result;
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Ha ocurrido un error: {response.ReasonPhrase}");
+                            return -1;
+                        }
                     }
                 }
+                return 1;
             }
-            return 1;
+            catch (Exception ex) {
+                Console.WriteLine($"Ha ocurrido un error: {ex.ToString()}");
+                return -1;
+            }
+           
         }
 
         //READ
